@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+  }
+  .main-logo{
+      color: white;
+      padding-right: 20px;
+      float: left;
+  }
+  p, a, label{
+      color: #777777;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  p, label{
+      padding-left: 20px;
+      padding-right: 20px;
+      line-height: 1.5;
+  }
+  input{
+      margin-left: 20px;
+      width: 920px;
+      font-size: 14px;
+  }
+  h1{
+      color: #4aaaa5;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      padding-left: 20px;
+  }
+  .backgrounds{
+      background-color: #4aaaa5;
+      width: 300px;
+      float: left;
+  }
+  .main-header{
+      background-color: #ffffff;
+      border-bottom: 2px solid #cccccc;
+      /*width: 960px;*/
+      height: 77px;
+      
+  }
+  .main-content{
+      background-color: #ffffff;
+      border: 2px #dddddd;
+      border-style: solid;
+      width: 960px;
+      height: auto;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      /*overflow: auto;*/
+      /*flex: 1;*/
+  }
+  footer{
+      background-color: #666666;
+      color: white;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      width: 100%;
+      border-top: 8px solid #4aaaa5;
+      margin-top: auto;
+  }
+  
+  body{
+      background-image: url("../images/pattern.jpg");
+      background-color: rgb(179, 179, 179);
+      height: 99%;
+      display: flex;
+      flex-direction: column;
+  }
+  #photoJorge{
+      float: left;
+      height: 150px;
+      margin-right: 20px;
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-bottom: 5px;
+  }
+  nav{
+      float: right;
+      padding-top: 30px;
+  }
+  .header-content{
+      width: 960px;
+      margin: 0 auto;
+  }
+  hr{
+      width: 920px;
+  }
+  #submitbutton{
+      margin: 20px;
+      background-color: #4aaaa5;
+      width: auto;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      padding: 5px;
+  }
+  textarea{
+      margin-left: 20px;
+      width: 920px;
+      
+  }
+  .img-container{
+      position: relative;
+      width: 300px;
+      margin-left: 20px;
+      height: 150px;
+      display: inline-block;
+      margin-top: 20px;
+      margin-bottom: 20px; 
+      margin-right: 10px;
+  }
+  .placeholder{
+      width: 300px;
+      height: 150px;
+      
+  }
+  .tag{
+      position: absolute;
+      color: white;
+      top: 65%;
+      background-color: #4aaaa5;
+      width: 100%;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+  }
+  #tag1{
+      z-index: 1;
+  }
+  a{
+    text-decoration: none;
+  }
+
+  @media (min-width: 769px) and (max-width: 980px){
+    body{
+        max-width: 980px;
+        min-width: 769px;
+        height: 100%;
+    }
+    .main-content{
+        /*width: 680px;
+        margin-left: 40px;*/
+        max-width: 65%;
+        /*min-width: 60%;*/
+        margin-left: 40px;
+    }
+    .header-content{
+        width: 100%;
+    }
+    .main-logo{
+        margin-left: 40px;
+    }
+    hr, input, textarea{
+        width: 94%;
+    }
+    nav {
+        margin-right: 20px;
+        width: auto;
+        overflow: hidden;
+    }
+    .img-container{
+        width: 45%;
+        margin-right: -5px;
+        /*margin-top: 20px;
+        margin-bottom: 20px;*/
+        
+    }  
+    .placeholder{
+        width: 100%;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 768px){
+    body{
+        max-width: 768px;
+        min-width: 641px;
+        height: 100%;
+    }
+    .header-content{
+        width: 100%;
+    }
+    .main-content{
+        width: 95%;
+    }
+    hr, input, textarea{
+        width: 93%;
+    }
+    nav{
+        width: auto;
+        margin-right: 30px;
+        overflow: hidden;
+    }
+    .main-logo{
+        float: left;
+        width: auto;
+        margin-left: 20px;
+    } 
+
+    .img-container{
+        /*display: block;*/
+        width: 45%;
+        /*margin: auto;*/
+        /*margin-top: 20px;
+        margin-bottom: 20px;*/
+    }  
+    .placeholder{
+        width: 100%;
+    }
+  }
+  @media screen and (max-width: 640px){
+    body{
+        max-width: 640px;
+        min-width: auto;
+        height: 100%;
+    }
+    .header-content {
+        width: 100%;
+    }
+    .main-content{
+        width: 95%;
+    }
+    hr, input, textarea{
+        width: 93%;
+    }
+    .main-logo{
+        text-align: center;
+        float: none;
+        max-width: 640px;
+        min-width: auto;
+    } 
+    .main-header{
+        height: 140px;
+        width: 100%;
+          
+    }
+    nav{
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #photoJorge{
+        display: block;
+        float: none;
+        width: 93%;
+        height: auto;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .img-container{
+        display: block;
+        width: 92%;
+        margin: auto;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .placeholder{
+        width: 100%;
+        height: auto;
+    }
+  }
